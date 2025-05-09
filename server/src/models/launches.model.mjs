@@ -3,7 +3,7 @@ const launches = new Map();
 let latestFlightNumber = 0;
 
 const launch = {
-    flightNumber: '0',
+    flightNumber: 0,
     mission: 'Kepler Exploration Z',
     rocket: 'Explorer IS2',
     launchDate: new Date('December 27, 2030'),
