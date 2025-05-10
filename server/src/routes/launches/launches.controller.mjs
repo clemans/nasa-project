@@ -2,7 +2,7 @@ import { addNewLaunch, getAllLaunches } from '../../models/launches.model.mjs';
 
 export function httpAddNewLaunch(req, res) {
     const launch = req.body;
-    if (!launch.mission || !launch.rocket || !launch.destination || !launch.launchDate) {
+    if (!launch.mission || !launch.rocket || !launch.target || !launch.launchDate) {
         return res.status(400).json({
             error: "Invalid or missing property input."
         })
