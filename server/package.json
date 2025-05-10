@@ -5,6 +5,8 @@
   "scripts": {
     "fetch:planets": "node src/services/planets.service.mjs",
     "start": "node src/server.mjs",
+    "test": "node --experimental-vm-modules ../node_modules/.bin/jest",
+    "test:watch": "npm run test -- --watch",
     "watch": "nodemon src/server.mjs"
   },
   "keywords": [],
@@ -18,6 +20,7 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.0"
   }
 }
